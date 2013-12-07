@@ -1,0 +1,16 @@
+{
+  "name": "firedict",
+  "version": "0.0.1",
+  "description": "a simple dictionary webapp built on top of the glorious firebase.com",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/luto/firedict.git"
+  },
+  "author": "luto <m@luto.at>",
+  "license": "MIT",
+  "dependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-less": "~0.8.3"
+  }
+}

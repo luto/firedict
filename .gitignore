@@ -1,0 +1,11 @@
+# nodejs / grunt
+node_modules
+
+# generated css files
+html/css/*.css
+
+# custom files
+html/settings.js
+
+# webstorm
+.idea
