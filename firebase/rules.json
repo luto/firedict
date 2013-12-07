@@ -1,0 +1,33 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    
+    "users": {
+      "$user": {
+        ".read": "$user == auth.id",
+        ".write": "$user == auth.id",
+        "$other": { ".validate": false },
+        
+        "dicts": {
+          "$dict": {
+            "$other": { ".validate": false },
+            
+            "lang1": { ".validate": "newData.isString()" },
+            "lang2": { ".validate": "newData.isString()" },
+            
+            "words": {
+              "$word": {
+                "$other": { ".validate": false },
+                
+                "lang1": { ".validate": "newData.isString()" },
+                "lang2": { ".validate": "newData.isString()" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
